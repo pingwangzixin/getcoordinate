@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        document.onmousemove=function(ev){
+            var event = ev||event;
+            document.getElementById("xcoor").innerHTML=event.clientX+'px';
+            document.getElementById("ycoor").innerHTML=event.clientY+'px';
+        }
+    </script>
+</head>
+<body>
+    <p>x轴的坐标是：<span id="xcoor"></span></p>
+    <p>y轴的坐标是：<span id="ycoor"></span></p>
+</body>
+</html>
